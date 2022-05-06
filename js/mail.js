@@ -1,15 +1,19 @@
-let usuario = prompt("Ingrese un nombre de ususario"),
-    contraseña = prompt("Ingrese contraseña");
 
-verificacion();
+calificacion = Number(prompt("Ingrese nota del alumno"));
 
-function verificacion(){
-    let vusuario = prompt("Vuelva a ingresar el ususario"),
-     vcontraseña = prompt("vuelva a ingresar la contraseña");
-     if(usuario === vusuario && contraseña === vcontraseña){
-         alert("Login Exitoso")
-     }else{
-         alert("ERROR")
-         verificacion();
-     }
+for (let i= 1; calificacion <= 10; i++)
+{    
+ 
+
+    if (calificacion >=8 )
+
+    alert("FELICITACIONES APROBADO, POSIBLEMENTE ESTES EN LOS PRIMERO PUESTOS!!")
+
+    else if (calificacion <=7)
+
+    alert ("FELICITACIONES ESTAS APROBADO")
+
+    else if (calificacion <=5)
+
+    alert("DESAPROBADO, A SEGUIR INTENTADO")
 }
