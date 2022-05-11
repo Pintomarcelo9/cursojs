@@ -1,19 +1,37 @@
+/*CORRECCIÓN DESAFIO COMPLEMENTARIO 1*/ 
 
-calificacion = Number(prompt("Ingrese nota del alumno"));
+/*let calificacion = Number(prompt("Ingrese nota del alumno"));
 
 for (let i= 1; calificacion <= 10; i++)
-{    
- 
 
-    if (calificacion >=8 )
+if (calificacion >=9 )
+alert ("FELICITACIONES APROBADO! Seguramente estes en los primeros 10")
 
-    alert("FELICITACIONES APROBADO, POSIBLEMENTE ESTES EN LOS PRIMERO PUESTOS!!")
+else if (calificacion >=6 && calificacion <=8)
 
-    else if (calificacion <=7)
+alert ("FELICITACIONES APROBADO!")
 
-    alert ("FELICITACIONES ESTAS APROBADO")
+else if( calificacion <=5)
 
-    else if (calificacion <=5)
+alert ("DESAPROBADO")*/
 
-    alert("DESAPROBADO, A SEGUIR INTENTADO")
-}
+
+/* DESAFIO 1*/
+
+let usuario = prompt("Ingrese usuario"),
+    contraseña = prompt("Ingrese contraseña");
+
+    verificacion();
+
+    function verificacion(){
+        let vusuario = prompt("vuelva a ingresar el usuario"),
+            vcontraseña = prompt("vuelva a ingresar contraseña")
+        if(usuario === vusuario && contraseña === vcontraseña){
+            alert("login Exitoso")
+        }else{
+            alert("ERROR!")
+        }
+    }
+
+
+
