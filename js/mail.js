@@ -18,7 +18,7 @@ alert ("DESAPROBADO")*/
 
 /* DESAFIO 1*/
 
-let usuario = prompt("Ingrese usuario"),
+/*let usuario = prompt("Ingrese usuario"),
     contraseña = prompt("Ingrese contraseña");
 
     verificacion();
@@ -31,7 +31,27 @@ let usuario = prompt("Ingrese usuario"),
         }else{
             alert("ERROR!")
         }
-    }
+    }*/
 
+    /*Primer entrega proyecto final*/ 
+function agregar(){
 
+    function Persona (nombre, edad){
+    this.nombre=nombre
+    this.edad=edad
+}
 
+let nombreAgregar = document.getElementById("nombre").value;
+let edadAgregar = document.getElementById("edad").value;
+
+nuevoSujeto = new Persona(nombreAgregar, edadAgregar);
+console.log(nuevoSujeto);
+agregarPersona();
+}
+
+let baseDatos=[];
+function agregarPersona(){
+baseDatos.push(nuevoSujeto);
+console.log(baseDatos);
+document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'<tbody><td>';
+};
